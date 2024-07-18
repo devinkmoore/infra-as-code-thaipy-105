@@ -1,6 +1,7 @@
 # ThaiPy 105: Infra as Code in Python with Pulumi
 
 For introduction to infra as code, see the [slides](https://docs.google.com/presentation/d/1C0EjFw952fnU_X28p8u37oCGUNtGmh5apqHTdg-Pmis/edit?usp=sharing]).
+You'll want to create your own repo and follow these steps since you have reference your own GCP project ID, etc.
 
 ## How to
 
@@ -20,10 +21,10 @@ These are the steps I took to set everything up.
 7. `mkdir pulumi && cd pulumi`
 8. `pulumi new gcp-python`, give the project a name and description, then choose the default `dev` when it asks you for
 a stack name
-9. Added arg `name="thaipy-12345"` to `storage.Bucket`
+9. In `pulumi/__main__.py` you can see there is already an example, add an arg `name="thaipy-12345"` to `storage.Bucket`
 10. `pulumi up` and the bucket gets created
 11. Now let's create a secret in Secret Manager, first create a config for the secret. If you look in 
-`pulumi/Pulumi.dev.yaml` you'll see that it's been encrypted.
+`pulumi/Pulumi.dev.yaml` you'll see that it's been encrypted
     ```
     pulumi config set our_little_secret 123456 --secret
     ```
