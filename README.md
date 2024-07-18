@@ -1,7 +1,7 @@
 # ThaiPy 105: Infra as Code in Python with Pulumi
 
 For introduction to infra as code, see the [slides](https://docs.google.com/presentation/d/1C0EjFw952fnU_X28p8u37oCGUNtGmh5apqHTdg-Pmis/edit?usp=sharing]).
-You'll want to create your own repo and follow these steps since you have reference your own GCP project ID, etc.
+You'll want to create your own repo and follow these steps since you have to reference your own GCP project ID, etc.
 
 ## How to
 
